@@ -1,7 +1,7 @@
 \documentclass[15pt]{article}
-
-\title{Crashes in the City of Madison}
 \author{Zhixin Wang, Yijing Gong, Haowen Hu, Alex Radicia}
+\title{Crashes in the City of Madison}
+
 \date{}
 
 \usepackage{tikz}
@@ -24,7 +24,7 @@
 ~\\
 ~\\
 \section{Introduction}
-During the years of 2000-2018 in the city of Madison, 40001 crashes were documented and resulted in 201 deaths. This study aimed to identify the common features of these crashes to guide safety improvement efforts. This report consists mainly of three sections: when, where, and how to comprehensively analyze factors that may be related to crashes.           
+During the years of 2000-2018 in the city of Madison, 40001 crashes were documented and resulted in 201 deaths. This study aimed to identify the common features of these crashes to guide safety improvement efforts. This report consists mainly of three sections: when, how, and where to comprehensively analyze factors that may be related to crashes.           
 ~\\
 \newline
 The data in this study was generated after carefully reviewing the crash report filed for each crash as well as the general purpose crash data file produced by the Wisconsin Department of Transportation (WisDOT), Bureau of Traffic Operations (BTO), and distributed by the Wisconsin Traffic Operations and Safety (TOPS) Laboratory at the University of Wisconsin-Madison.    
@@ -59,14 +59,14 @@ The data in this study was generated after carefully reviewing the crash report 
 \section{When do crashes happen in Madison?}
 \subsection{Week and Hour}
 \label{sec:WH}
-Figure 1 shows the rate at which accidents occur at different tiimes of day, during the weekdays and weekend. (The curves from Monday to Friday are very similar@\ref{sec:WH1}.). The two peaks of the working day curve are 7am-8am and 4pm-6pm, which may be caused by the increase in traffic volume from commuting, in turn leading to an increase in the number of crashes in the City of Madison. In addition, it can be clearly seen from the figure that the number of crashes during off-hours(4pm-6pm) is higher than that of work hours. Since people start working at different times, usually ranging from 7am to 10am or even later, so the scattered working hours slow down the traffic on the road. But no matter what type of work, people will get off work from four to six, so the more amount of traffic during off hours leads to a higher number of accidents. 
+Figure 1 shows the rate at which accidents occur at different times of day, during the weekdays and weekend. (The curves from Monday to Friday are very similar @\ref{sec:WH1}.). The two peaks of the working day curve are 7am-8am and 4pm-6pm, which may be caused by the increase in traffic volume from commuting, in turn leading to an increase in the number of crashes in the City of Madison. In addition, it can be clearly seen from the figure that the number of crashes during off-hours (4pm-6pm) is higher than that of work hours. Since people start working at different times, usually ranging from 7am to 10am or even later, so the scattered working hours slow down the traffic on the road. But no matter what type of work, people will get off work from four to six, so the more amount of traffic during off hours leads to a higher number of accidents. 
 \begin{figure}[H]
 \centering
 \includegraphics[height=85mm]{HourNM.eps}
 \caption{\# of Weekly Crash Distributed by Hour in Madison}
 \label{1}
 \end{figure}
- And people may have just left the bar from midnight till 4 in the morning on the weekend, but most people stay home during that time on work-days. This should be the main reason why the weekend curve is higher than the work-day curve before 4 am. For the Alcohol-Related crashes, it can be concluded that the peak hours of drunk driving are between 0:00 and 3:00 AM, regardless of which day of the week. And we know that buses in Madison don't operate after midnight, which may be one of the reasons for drunk driving.
+ And people may have just left the bar from midnight till 4 in the morning on the weekend, but most people stay home during that time on work-days. This should be the main reason why the weekend curve is higher than the work-day curve before 4 am. For the Alcohol-Related crashes, it can be concluded that the peak hours of drunk driving are between 0:00 and 3:00 AM, regardless of which day of the week. And we know that buses in Madison don't operate after midnight.
 
 In order to solve this problem, we can refer to the weekend late-night bus service provided by some schools in New York State\footnote{Nazareth College, Rochester Institute of Technology, the State University College at Geneseo and the University of Rochester are among local colleges that have various late-night bus services - usually on weekend nights - to off-campus sites.}, or the popular chauffeur service in China\footnote{The company introduced Didi Chauffeur (or Didi Daijia in Chinese), a service that lets users summon temporary personal drivers. Car owners who find themselves physically unable to drive can tap one of Didi Kuaidi's apps, and a driver will head to the person's location and hop in their car. The most obvious use for the service is to provide designated drivers after a night out drinking. Designated drivers may opt to take public transportation to get back home, or bring a folding bike along. The company might provide shuttle buses for chauffeurs when demand is high. Or they could hitch a ride back using one of Didi’s other Uberesque services—like Didi Dache, which provides taxi rides.}.
 
@@ -80,7 +80,7 @@ We took the top five types of crashes in Madison and looked at their monthly dis
 
 \newpage
 \subsection{Year}
-From the Figure 6, we can see that the number of drunk driving in Madison City suddenly dropped a lot in 2007(a new policy(ALDO)\footnote{ALDO forbids new tavern licenses inside the downtown area — bounded by Blair Street on the east, Park and Regent streets on the west, and the lakes on the north and south. People can still get liquor licenses there for new restaurants, but they are required to generate at least 50\% of their revenue from food sales.} to restrict the operation of Madison City bars was introduced), which leads to that total number of drunk driving in 2013 was only 50\% in 2007. This policy expired in 2011 and lowered the bar restrictions on the basis of the original policy\footnote{Under the compromise plan, up to seven new nightspots could open Downtown provided they draw no more than 65 percent of revenue from alcohol sales and focus primarily on entertaining patrons. Movies, music, theater, sports, bowling and arcade games all qualify.}for two year's extension, which is why the number of drunk drivers has increased.
+From the Figure 3, we can see that the number of drunk driving in Madison City suddenly dropped a lot in 2007(a new policy(ALDO)\footnote{ALDO forbids new tavern licenses inside the downtown area — bounded by Blair Street on the east, Park and Regent streets on the west, and the lakes on the north and south. People can still get liquor licenses there for new restaurants, but they are required to generate at least 50\% of their revenue from food sales.} to restrict the operation of Madison City bars was introduced), which leads to that total number of drunk driving in 2013 was only 50\% in 2007. This policy expired in 2011 and lowered the bar restrictions on the basis of the original policy\footnote{Under the compromise plan, up to seven new nightspots could open Downtown provided they draw no more than 65 percent of revenue from alcohol sales and focus primarily on entertaining patrons. Movies, music, theater, sports, bowling and arcade games all qualify.}for two year's extension, which is why the number of drunk drivers has increased.
 \begin{figure}[H]
 \centering
 \includegraphics[height=80mm]{AYearcrashM.eps}
@@ -90,7 +90,7 @@ After 2013, the policy in 2011 has been expired. As an alternative to it, the ci
 
 \section{How do crashes happen in Madison?}
 \subsection{Age}
-From Figure 7, we can see the age ratio of crashes in different hours. The rate of crashes among young people rises gradually after noon, and peaks in the early hours of the morning. Based on the previous analysis of drunk driving time, we've already known that the peak hours of drunk driving are between 0:00 and 3:00 AM. So we infer that drunk driving is mainly caused by young people in the 20s.
+From Figure 4, we can see the age ratio of crashes in different hours. The rate of crashes among young people rises gradually after noon, and peaks in the early hours of the morning. Based on the previous analysis of drunk driving time, we've already known that the peak hours of drunk driving are between 0:00 and 3:00 AM. So we infer that drunk driving is mainly caused by young people in the 20s.
 \begin{figure}[H]
 \centering
 \includegraphics[height=80mm]{AgeM.eps}
@@ -100,7 +100,7 @@ From Figure 7, we can see the age ratio of crashes in different hours. The rate 
 
 \newpage
 \subsection{Gender}
-Figure  shows the gender composition of drivers involved in crashes in the City of Madison from 2000 to 2018. We can see that no matter the total number of crashes or the number of drunk driving, male are higher than female. And although the total number fluctuates between years, the trend of men's lines and women's lines is very similar. 
+Figure 5 shows the gender composition of drivers involved in crashes in the City of Madison from 2000 to 2018. We can see that no matter the total number of crashes or the number of drunk driving, male are higher than female. And although the total number fluctuates between years, the trend of men's lines and women's lines is very similar. 
 \begin{figure}[H]
 \centering
 \includegraphics[height=80mm]{Gender.eps}
@@ -110,7 +110,7 @@ Figure  shows the gender composition of drivers involved in crashes in the City 
 
 \newpage
 \subsection{Types of crash}
-Figure 6 shows the top five types of fatal crashes and their total number of crashes. Although crashes related to train has the highest fatal rate, but the total number of this type of crashes is extremely low. So we can say that the most dangerous type of crashes is which hits pedestrians. 
+Figure 6 shows the top five types of fatal crashes and their total number of crashes. Although crashes related to train has the highest fatal rate, but the total number of this type is extremely low. So we can say that the most dangerous type of crashes is which hits pedestrians. 
 \begin{figure}[H]
 \centering
 \includegraphics[height=100mm]{TYPEF.eps}
@@ -118,13 +118,10 @@ Figure 6 shows the top five types of fatal crashes and their total number of cra
 \label{16}
 \end{figure}
 
-\newpage
 \subsection{Severity}
 \subsubsection{Speed and Severity}
-Table 1 shows the number and percent of crashes in different speed limits at three different severity levels in the City of Madison. We can say that for fatal crashes, the higher the speed limit, the greater the number. For minor injuries that are non-incapacitating, the lower the speed limit, the greater the number. For incapacitating accidents, there is no significant difference in the amount of occurrence between different speed limits.
+Table 1 shows the percent of crashes in different speed limits at three different severity levels in the City of Madison. 
 
-
-% Table generated by Excel2LaTeX from sheet 'Sheet1'
 \begin{table}[htbp]
   \centering
   \caption{the correlation between severity and speed limits}
@@ -140,38 +137,23 @@ Table 1 shows the number and percent of crashes in different speed limits at thr
   \label{tab:addlabel}%
 \end{table}%
 
+We can say that for fatal crashes, the higher the speed limit, the greater the number. For minor injuries that are non-incapacitating, the lower the speed limit, the greater the number. For incapacitating accidents, there is no significant difference in the amount of occurrence between different speed limits.
+
 \subsubsection{Age and Severity}
-We can see that the percentage of minor injuries and disabilities between different age groups fluctuates very little in the City of Madison. So we infer that there's no correlation between age and crashes that don't kill people.
+From Figure 7, the percentage of minor injuries and disabilities between different age groups fluctuates very little in the City of Madison. So we infer that there's no correlation between age and crashes that don't kill people. And we can see that the percentage of incapacitating accidents in the drunk driving is higher than that of all crahes and the percentage of non-incapacitating accidents is lower than that of all crahes, so we conclude that drunk driving accidents will cause more serious harm to the driver.
 \begin{figure}[H]
 \centering
-\includegraphics[height=60mm]{AgeS.eps}
+\includegraphics[height=80mm]{AgeS.eps}
 \caption{\% Severity Distributed by Age}
 \label{19}
 \end{figure}
 
-From Figure 14, we can see that the percentage of incapacitating accidents in the drunk driving is higher than Figure 17 (all crahes) and the percentage of non-incapacitating accidents is lower than Figure 17 (all crahes), so we conclude that drunk driving accidents will cause more serious harm to the driver.
+From figure 8, we can see that among all accidents, crashes involving drivers aged 45-55 have the lowest fatality rates in the City of Madison. This might because drivers in this age group are more experienced than younger drivers and have quicker reflexes than older drivers. But in the case of drunk driving, crashes involving drivers aged 45-55 have the highest fatality rates. This may be because physical well-being declines with age and drunk driving are more likely to be fatal. However, older people over the age of 55 tend to be more cautious, so the fatality rate in drunk driving events is not high.
 \begin{figure}[H]
 \centering
-\includegraphics[height=60mm]{AgeSA.eps}
-\caption{\% Alcohol-Related Severity Distributed by Age}
-\label{20}
-\end{figure}
-
-From figure 15, we can see that among all accidents, crashes involving drivers aged 45-55 have the lowest fatality rates in the City of Madison. This may be because drivers in this age group are more experienced than younger drivers and have quicker reflexes than older drivers.
-\begin{figure}[H]
-\centering
-\includegraphics[height=60mm]{AgeSF.eps}
+\includegraphics[height=80mm]{AgeSF.eps}
 \caption{\% Fatality Distributed by Age}
 \label{21}
-\end{figure}
-
-\newpage
-But in the case of drunk driving, crashes involving drivers aged 45-55 have the highest fatality rates in the City of Madison. This may be because physical well-being declines with age and drunk driving are more likely to be fatal. However, older people over the age of 55 will be more cautious, so the fatality rate in drunk driving events is not high.
-\begin{figure}[H]
-\centering
-\includegraphics[height=60mm]{AgeSFA.eps}
-\caption{\% Alcohol-Related Fatality Distributed by Age}
-\label{22}
 \end{figure}
 
 ~\\
@@ -195,15 +177,17 @@ We observed a significant decline in the number of crashes associated with alcoh
 
 
 \subsection{Deer}
-It is surprising that Madison has a high number of crash on deer (806 crashes over 19 years). Figure 17 shows the locations where crashes on deer have occurred in Madison over the past 19 years. As expected, The majority of crashes on deer have occurred on the periphery of Madison, and mainly in the northern part and around the Mendota Lake.
+It is surprising that Madison has a high number of crash on deer (806 crashes over 19 years). Figure 11 shows the locations where crashes on deer have occurred in Madison over the past 19 years. As expected, The majority of crashes on deer have occurred on the periphery of Madison, and mainly in the northern part and around the Mendota Lake.
 \begin{figure}[H]
 \raggedleft
 \includegraphics[height=80mm]{deer.eps}
 \caption{Deer-Related crashes in Madison}
 \end{figure}
 
+~\\
+~\\
 \subsection{Bike and Pedestrian}
-Figure 18 and Figure 19 show the locations where crashes have occurred in Madison over the past 19 years on bike (ranked fifth in types of crash) and pedestrian (ranked fourth), respectively. And our maps highly corrrespond with their crash maps. We found that bike crash map and pedestrian crash map shared a similar pattern where most of those crashes occurred in downtown Madison.
+Figure 12 and Figure 13 show the locations where crashes have occurred in Madison over the past 19 years on bike (ranked fifth in types of crash) and pedestrian (ranked fourth), respectively. And our maps highly corrrespond with their crash maps. We found that bike crash map and pedestrian crash map shared a similar pattern where most of those crashes occurred in downtown Madison.
 \begin{figure}[H]
 \raggedleft
 \includegraphics[height=68mm]{bike.eps}
